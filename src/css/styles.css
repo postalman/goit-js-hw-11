@@ -37,7 +37,8 @@ img {
 .info {
   display: flex;
   gap: 10px;
-  width: 480px;
+  width: 450px;
+  margin: 0 auto;
 }
 
 .load-more {
