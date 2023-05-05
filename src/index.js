@@ -36,10 +36,14 @@ async function fetchImages(query) {
 
     onMarkUpPhotos(response);
 
+    // if (counter > 0) {
+    //   setTimeout(() => {
+    //     loadMoreBtn.classList.remove('is-hidden');
+    //   }, 1000);
+    // }
+
     if (counter > 0) {
-      setTimeout(() => {
-        loadMoreBtn.classList.remove('is-hidden');
-      }, 1000);
+      loadMoreBtn.classList.remove('is-hidden');
     }
 
     if (counter >= response.data.totalHits && response.data.totalHits > 0) {
